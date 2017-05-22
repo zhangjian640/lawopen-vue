@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,IAAI;EACA,UAAU,EAAE,gDAAgD;EAC5D,eAAe,EAAE,KAAK;;AAE1B,KAAK;EACD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,MAAM;EAMlB,YAAM;IAKF,OAAO,EAAE,YAAY",
+"sources": ["slidepage.scss"],
+"names": [],
+"file": "slidepage.css"
+}

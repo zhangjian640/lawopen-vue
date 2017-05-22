@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import "ba";
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/background2.jpg) no-repeat;
+  background-size: cover;
+}
+.head{
+  .wh(790px,104px);
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  top:76px;
+  margin: 0 auto;
+  .logo{
+    .wh(104px,104px);
+    float: left;
+  }
+  .title{
+    .wh(652px,78px);
+    float: left;
+    margin: 13px 15px;
+  }
+}
+.footer {
+  width: 800px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.container{
+  .wh(1065px,575px);
+  position: relative;
+  top:110px;
+  margin: 0 auto;
+  .main{
+    .wh(907px, 575px);
+    background: url(../images/check/body_bg.png);
+    .check-items{
+      height: 85px;
+      padding-left: 224px;
+      padding-top: 20px;
+      li{
+        .wh(60px,85px);
+        float: left;
+        margin-right: 24px;
+      }
+      .last-item{
+        margin-right: 80px;
+      }
+    }
+    .content{
+      .wh(720px, 400px);
+      margin: 45px 88px 20px 99px;
+      table{
+        width: 720px;
+        td{
+          line-height: 35px;
+          border-bottom: 1px dashed #d5d5d5;
+          &:first-child{
+            color:#0e97ff;
+            text-align: left;
+            text-indent: 15px;
+          }
+          &:nth-of-type(2){
+            color: #3d3d3d;
+          }
+          &:last-child{
+            color: #bebebe;
+          }
+        }
+        .dot{
+          .wh(3px, 3px);
+          display: inline-block;
+          margin-right: 20px;
+          background: url(../images/check/dot.png) no-repeat;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .qr-code-wrap{
+    .wh(140px, 208px);
+    position: absolute;
+    top: 44px;
+    right: 0;
+    background: url(../images/check/ewm_bg.png);
+    .qr-code{
+      .wh(121px, 123px);
+      padding:12px 9px 0;
+    }
+    .msg{
+      margin-top: 5px;
+      text-align: center;
+    }
+    .close-btn{
+      height: 22px;
+      background: #d0d0d0;
+      text-align: center;
+      cursor: pointer;
+      &:hover{
+        color:#ffffff;
+      }
+    }
+  }
+}
