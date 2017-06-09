@@ -4,12 +4,19 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routes from './router.config'
 
-import Layout from './components/layout'
+import Layout from './pages/layout'
 
 Vue.config.productionTip = false
 
-Vue.use(VueRouter)
+import iView from 'iview'
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
+
+Vue.use(VueRouter)
+Vue.use(iView)
 const router = new VueRouter({
   mode: 'history',
   routes

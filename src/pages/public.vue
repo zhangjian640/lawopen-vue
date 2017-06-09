@@ -2,13 +2,21 @@
     <div class="container">
       <div class="main">
         <ul class="check-items">
-          <li><img src="../assets/images/check/btn1.png"/></li>
-          <li><img src="../assets/images/check/btn2.png"/></li>
-          <router-link to="/check/search" tag="li">
-            <li><img src="../assets/images/check/btn3_active.png"/></li>
+          <router-link to="/public/punish" tag="li">
+            <img src="../assets/images/check/btn1.png"/>
           </router-link>
-          <li><img src="../assets/images/check/btn4.png"/></li>
-          <li class="last-item"><img src="../assets/images/check/btn5.png"/></li>
+          <router-link  to="/public/power" tag="li">
+            <img src="../assets/images/check/btn2.png"/>
+          </router-link>
+          <router-link to="/public/case" tag="li">
+            <img src="../assets/images/check/btn3_active.png"/>
+          </router-link>
+          <router-link to="/public/decision" tag="li">
+            <img src="../assets/images/check/btn4.png"/>
+          </router-link>
+          <router-link to="/public/law" tag="li">
+            <img src="../assets/images/check/btn5.png"/>
+          </router-link>
           <li><img src="../assets/images/check/txt_chaxunxuzhi.png"/></li>
         </ul>
         <router-view></router-view>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="resetComponent">
     <img class="bg" src="../assets/images/index/background2.jpg">
     <div class="app-head">
       <div class="logo"><img src="../assets/images/index/logo_01.png"/></div>
@@ -15,11 +15,17 @@
 </template>
 
 <script>
+import { eventHub } from '../eventHub'
 export default {
   components: {
   },
   data () {
     return {
+    }
+  },
+  methods: {
+    resetComponent () {
+      eventHub.$emit('reset-component')
     }
   }
 }

@@ -1,0 +1,113 @@
+{
+  "check_in": {
+    "phone_num": 123,
+    "serial_num": 123
+  },
+  "case_list": [{
+      "case_id": 1,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-9-9"
+    },
+    {
+      "case_id": 2,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-6-9"
+    },
+    {
+      "case_id": 3,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-6-9"
+    },
+    {
+      "case_id": 4,
+      "case_name": "案件B",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-8-9"
+    },
+    {
+      "case_id": 5,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-1-5"
+    },
+    {
+      "case_id": 6,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-4-2"
+    },
+    {
+      "case_id": 7,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-4-9"
+    },
+    {
+      "case_id": 8,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-8-11"
+    },
+    {
+      "case_id": 9,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2017-5-9"
+    },
+    {
+      "case_id": 10,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-8-9"
+    },
+    {
+      "case_id": 11,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-3-9"
+    },
+    {
+      "case_id": 13,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-1-9"
+    },
+    {
+      "case_id": 13,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2016-2-19"
+    },
+    {
+      "case_id": 14,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2017-4-9"
+    },
+    {
+      "case_id": 15,
+      "case_name": "案件A",
+      "case_desc": "案件描述",
+      "case_place": "A路",
+      "case_time": "2017-3-22"
+    }
+
+  ]
+}
