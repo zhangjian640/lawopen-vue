@@ -79,19 +79,11 @@ devMiddleware.waitUntilValid(() => {
   _resolve()
 })
 
-
-
 var appData = require('../db.json')
 var check_in = appData.check_in
 var case_list = appData.case_list
 
 var apiRoutes = express.Router()
-// apiRoutes.get('/check_in', function(req, res) {
-
-//   res.json({
-//     data: check_in
-//   })
-// })
 
 apiRoutes.get('/case_list', function(req, res) {
   var page_size = parseInt(req.query.page_size) || 5
@@ -112,38 +104,6 @@ apiRoutes.get('/case_list', function(req, res) {
 })
 
 app.use('/api', apiRoutes)
-
-// var apiServer = express()
-// var bodyParser = require('body-parser')
-// apiServer.use(bodyParser.urlencoded({ extended: true }))
-// apiServer.use(bodyParser.json())
-// var apiRouter = express.Router()
-// var fs = require('fs')
-// apiRouter.route('/:apiName')
-//   .all(function(req, res) {
-//     console.log(req)
-//     fs.readFile('./db.json', 'utf-8', function(err, data) {
-//       if (err) {
-//         throw err
-//       }
-//       var data = JSON.parse(data)
-//       if (data[req.params.apiName]) {
-//         res.json(data[req.params.apiName])
-//       } else {
-//         res.send('no souch api name')
-//       }
-//     })
-//   })
-// apiServer.use('/api', apiRouter)
-// apiServer.listen(port + 1, function(err) {
-//   if (err) {
-//     console.log(err)
-//     return
-//   }
-//   console.log('Listening at http://localhost:' + (port + 1) + '\n')
-// })
-
-
 
 var server = app.listen(port)
 

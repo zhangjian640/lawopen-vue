@@ -1,11 +1,11 @@
 <template>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="../assets/images/index/slide1.png"/></div>
-      <div class="swiper-slide"><img src="../assets/images/index/slide2.png"/></div>
-      <div class="swiper-slide"><img src="../assets/images/index/slide3.png"/></div>
-      <div class="swiper-slide"><img src="../assets/images/index/slide4.png"/></div>
-      <div class="swiper-slide"><img src="../assets/images/index/slide5.png"/></div>
+      <router-link to="/public/case" class="swiper-slide" tag="div"><img src="../assets/images/index/slide1.png"/></router-link>
+      <router-link to="/public/power" class="swiper-slide" tag="div"><img src="../assets/images/index/slide2.png"/></router-link>
+      <router-link to="/public/punish" class="swiper-slide" tag="div"><img src="../assets/images/index/slide3.png"/></router-link>
+      <router-link to="/public/decision" class="swiper-slide" tag="div"><img src="../assets/images/index/slide4.png"/></router-link>
+      <router-link to="/public/law" class="swiper-slide" tag="div"><img src="../assets/images/index/slide5.png"/></router-link>
     </div>
     <div class="swiper-prev"><img src="../assets/images/index/icon_left.png"/></div>
     <div class="swiper-next"><img src="../assets/images/index/icon_right.png"/></div>

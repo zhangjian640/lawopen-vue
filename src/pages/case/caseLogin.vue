@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <ul class="left-content">
-      <li><img src="../../assets/images/check/title_ajcx.png"/></li>
+      <li><img src="../../assets/images/case/title_ajcx.png"/></li>
       <li>
         <label for="phoneNum">
           <span>手机号码&nbsp;:&nbsp;</span>
@@ -115,13 +115,13 @@
           float: right;
         }
         .phone-num{
-          background-image: url(../../assets/images/check/input_mobile.png);
+          background-image: url(../../assets/images/case/input_mobile.png);
         }
         .check-code{
-          background-image: url(../../assets/images/check/input_bianma.png);
+          background-image: url(../../assets/images/case/input_bianma.png);
         }
         .verification-code{
-          background-image: url(../../assets/images/check/input_yanzhengma.png);
+          background-image: url(../../assets/images/case/input_yanzhengma.png);
         }
       }
       .btns{
@@ -132,16 +132,16 @@
         }
         .login-btn{
           float: left;
-          background: url(../../assets/images/check/btn_denglu.png);
+          background: url(../../assets/images/case/btn_denglu.png);
           &:hover{
-            background: url(../../assets/images/check/btn_denglu_hover.png);
+            background: url(../../assets/images/case/btn_denglu_hover.png);
           }
         }
         .back-btn{
           float: right;
-          background: url(../../assets/images/check/btn_back.png);
+          background: url(../../assets/images/case/btn_back.png);
           &:hover{
-            background: url(../../assets/images/check/btn_back_hover.png);
+            background: url(../../assets/images/case/btn_back_hover.png);
           }
         }
       }
@@ -160,11 +160,11 @@
       }
       .btn{
         .wh(110px, 39px);
-        background: url(../../assets/images/check/btn_more.png);
+        background: url(../../assets/images/case/btn_more.png);
         cursor: pointer;
         margin: 10px;
         &:hover{
-          background: url(../../assets/images/check/btn_more_hover.png);
+          background: url(../../assets/images/case/btn_more_hover.png);
         }
       }
     }

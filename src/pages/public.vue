@@ -3,35 +3,44 @@
       <div class="main">
         <ul class="check-items">
           <router-link to="/public/punish" tag="li">
-            <img src="../assets/images/check/btn1.png"/>
+            <img src="../assets/images/case/btn1.png"/>
           </router-link>
           <router-link  to="/public/power" tag="li">
-            <img src="../assets/images/check/btn2.png"/>
+            <img src="../assets/images/case/btn2.png"/>
           </router-link>
           <router-link to="/public/case" tag="li">
-            <img src="../assets/images/check/btn3_active.png"/>
+            <img src="../assets/images/case/btn3_active.png"/>
           </router-link>
           <router-link to="/public/decision" tag="li">
-            <img src="../assets/images/check/btn4.png"/>
+            <img src="../assets/images/case/btn4.png"/>
           </router-link>
           <router-link to="/public/law" tag="li">
-            <img src="../assets/images/check/btn5.png"/>
+            <img src="../assets/images/case/btn5.png"/>
           </router-link>
-          <li><img src="../assets/images/check/txt_chaxunxuzhi.png"/></li>
+          <li class="last-item"><img src="../assets/images/case/txt_chaxunxuzhi.png"/></li>
         </ul>
         <router-view></router-view>
       </div>
-      <ul class="qr-code-wrap">
-        <li class="qr-code"><img src="../assets/images/check/ewm.png" alt="二维码"></li>
+      <ul v-show="isShowQR" class="qr-code-wrap">
+        <li class="qr-code"><img src="../assets/images/case/ewm.png" alt="二维码"></li>
         <li class="msg">扫一扫,关注公众号,获取信息更方便!</li>
-        <li class="close-btn">关闭</li>
+        <li class="close-btn" @click="closeQR">关闭</li>
       </ul>
   </div>
 </template>
 <script>
 
   export default {
-
+    data () {
+      return {
+        isShowQR: true
+      }
+    },
+    methods: {
+      closeQR () {
+        this.isShowQR = !this.isShowQR;
+      }
+    }
   }
 </script>
 <style lang="less" scoped>
@@ -46,7 +55,7 @@
     margin: 0 auto;
     .main{
       .wh(907px, 575px);
-      background: url(../assets/images/check/body_bg.png);
+      background: url(../assets/images/case/body_bg.png);
       .check-items{
         height: 85px;
         padding-left: 224px;
@@ -57,7 +66,7 @@
           margin-right: 24px;
         }
         .last-item{
-          margin-right: 80px;
+          margin-left: 58px;
         }
       }
       .content{
@@ -94,13 +103,13 @@
               float: right;
             }
             .phone-num{
-              background-image: url(../assets/images/check/input_mobile.png);
+              background-image: url(../assets/images/case/input_mobile.png);
             }
             .check-code{
-              background-image: url(../assets/images/check/input_bianma.png);
+              background-image: url(../assets/images/case/input_bianma.png);
             }
             .verification-code{
-              background-image: url(../assets/images/check/input_yanzhengma.png);
+              background-image: url(../assets/images/case/input_yanzhengma.png);
             }
           }
           .btns{
@@ -111,16 +120,16 @@
             }
             .login-btn{
               float: left;
-              background: url(../assets/images/check/btn_denglu.png);
+              background: url(../assets/images/case/btn_denglu.png);
               &:hover{
-                background: url(../assets/images/check/btn_denglu_hover.png);
+                background: url(../assets/images/case/btn_denglu_hover.png);
               }
             }
             .back-btn{
               float: right;
-              background: url(../assets/images/check/btn_back.png);
+              background: url(../assets/images/case/btn_back.png);
               &:hover{
-                background: url(../assets/images/check/btn_back_hover.png);
+                background: url(../assets/images/case/btn_back_hover.png);
               }
             }
           }
@@ -139,11 +148,11 @@
           }
           .btn{
             .wh(110px, 39px);
-            background: url(../assets/images/check/btn_more.png);
+            background: url(../assets/images/case/btn_more.png);
             cursor: pointer;
             margin: 10px;
             &:hover{
-              background: url(../assets/images/check/btn_more_hover.png);
+              background: url(../assets/images/case/btn_more_hover.png);
             }
           }
         }
@@ -154,7 +163,7 @@
       position: absolute;
       top: 44px;
       right: 0;
-      background: url(../assets/images/check/ewm_bg.png);
+      background: url(../assets/images/case/ewm_bg.png);
       .qr-code{
         .wh(121px, 123px);
         padding:12px 9px 0;
