@@ -3,19 +3,14 @@
       <div class="main">
         <ul class="check-items">
           <router-link to="/public/punish" tag="li">
-            <img src="../assets/images/case/btn1.png"/>
           </router-link>
           <router-link  to="/public/power" tag="li">
-            <img src="../assets/images/case/btn2.png"/>
           </router-link>
           <router-link to="/public/case" tag="li">
-            <img src="../assets/images/case/btn3_active.png"/>
           </router-link>
           <router-link to="/public/decision" tag="li">
-            <img src="../assets/images/case/btn4.png"/>
           </router-link>
           <router-link to="/public/law" tag="li">
-            <img src="../assets/images/case/btn5.png"/>
           </router-link>
           <li class="last-item"><img src="../assets/images/case/txt_chaxunxuzhi.png"/></li>
         </ul>
@@ -55,7 +50,7 @@
     margin: 0 auto;
     .main{
       .wh(907px, 575px);
-      background: url(../assets/images/case/body_bg.png);
+      background: url(../assets/images/case/body_bg.png) no-repeat;
       .check-items{
         height: 85px;
         padding-left: 224px;
@@ -64,9 +59,40 @@
           .wh(60px,85px);
           float: left;
           margin-right: 24px;
+          cursor: pointer
         }
         .last-item{
           margin-left: 58px;
+        }
+        li:nth-child(1){
+          background: url(../assets/images/case/btn1.png) no-repeat;
+          &.router-link-active{
+            background: url(../assets/images/case/btn1_active.png) no-repeat;
+          }
+        }
+        li:nth-child(2){
+          background: url(../assets/images/case/btn2.png) no-repeat;
+           &.router-link-active{
+            background: url(../assets/images/case/btn2_active.png) no-repeat;
+          }
+        }
+        li:nth-child(3){
+          background: url(../assets/images/case/btn3.png) no-repeat;
+          &.router-link-active{
+            background: url(../assets/images/case/btn3_active.png) no-repeat;
+          }
+        }
+        li:nth-child(4){
+          background: url(../assets/images/case/btn4.png) no-repeat;
+          &.router-link-active{
+            background: url(../assets/images/case/btn4_active.png) no-repeat;
+          }
+        }
+        li:nth-child(5){
+          background: url(../assets/images/case/btn5.png) no-repeat;
+          &.router-link-active{
+            background: url(../assets/images/case/btn5_active.png) no-repeat;
+          }
         }
       }
       .content{
